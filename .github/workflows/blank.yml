@@ -2,9 +2,6 @@
 
 name: CI
 
-env:
-  TZ: Asia/Shanghai
-
 # Controls when the action will run. 
 on:
   schedule:
@@ -20,6 +17,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - run: bash /notify.sh
+      - run: bash ./notify.sh
 
 
