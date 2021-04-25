@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - run: bash Zongrul1/MyNotification/notify.sh
+      - uses: actions/checkout@v2
+      - run: bash notify.sh
 
 
