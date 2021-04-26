@@ -5,7 +5,7 @@ name: dinner
 # Controls when the action will run. 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: '*/5 * * * *'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -16,7 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v2
-      - run: bash notify.sh
+      - run: curl -H 'Content-Type:text/plain' https://sc.ftqq.com/SCU171159T5382a8d7779443ec427bedca5106f2be6085284f450c9.send?text=今天订饭了吗
 
 
