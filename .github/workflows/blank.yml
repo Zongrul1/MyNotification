@@ -17,6 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - run: curl -H 'Content-Type:text/plain' https://sc.ftqq.com/SCU171159T5382a8d7779443ec427bedca5106f2be6085284f450c9.send?text=今天订饭了吗
+      - run: curl -H 'Content-Type:text/plain' https://sc.ftqq.com/SCU171159T5382a8d7779443ec427bedca5106f2be6085284f450c9.send?text=$(date +'%Y-%m-%d')今天订饭了吗
 
 
